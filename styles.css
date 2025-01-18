@@ -9,13 +9,13 @@ body {
 
 .product {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 700px;
-  height: 600px;
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
+  width: 610px;
+  height: 580px;
   margin: 50px auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -24,23 +24,25 @@ body {
 .product__photo {
   background: #fff;
   /* position: absolute; */
+  position: relative;
+  right: 10%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
   border-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.1);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .photo-main {
-  position: relative;
   width: 100%;
 }
 
 .photo-main img {
   width: 100%;
+  position: relative;
   background: #b1e836;
 }
 
@@ -49,6 +51,8 @@ body {
   justify-content: space-between;
   padding: 20px;
   background: #b1e836;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .controls i {
@@ -65,6 +69,8 @@ body {
   display: flex;
   gap: 15px;
   list-style: none;
+  position: relative;
+  right: 5%;
 }
 
 .photo-album ul li img {
@@ -79,8 +85,10 @@ body {
 .product__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px;
+  position: relative;
+  right: 8%;
 }
 
 .title {
